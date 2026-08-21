@@ -35,6 +35,7 @@ export function Nav() {
     },
     { label: t.nav.anmelden, href: "/anmelden" },
     { label: t.nav.unterstuetzen, href: "/unterstuetzen" },
+    { label: t.nav.faq, href: "/faq" },
     { label: t.nav.kontakt, href: "/kontakt" },
   ];
 
@@ -56,7 +57,7 @@ export function Nav() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-5 xl:flex">
           {navLinks.map((link) => (
             <div key={link.href} className="group relative">
               <Link
@@ -117,7 +118,7 @@ export function Nav() {
         </nav>
 
         <button
-          className="lg:hidden"
+          className="xl:hidden"
           aria-label={t.nav.menuToggle}
           onClick={() => setMobileOpen((v) => !v)}
         >
@@ -126,7 +127,7 @@ export function Nav() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-navy/10 bg-cream px-6 py-4 lg:hidden">
+        <div className="border-t border-navy/10 bg-cream px-6 py-4 xl:hidden">
           <nav className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <div key={link.href}>

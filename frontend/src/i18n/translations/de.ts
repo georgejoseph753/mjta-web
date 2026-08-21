@@ -16,7 +16,8 @@ export const de: Dictionary = {
     anmelden: "Anmelden und Finanzen",
     unterstuetzen: "Unterstützen",
     kontakt: "Kontakt",
-    lmsLogin: "Login",
+    lmsLogin: "Studierendenportal",
+    faq: "Häufige Fragen",
     menuToggle: "Menü öffnen",
   },
   footer: {
@@ -268,5 +269,51 @@ export const de: Dictionary = {
     title: "Datenschutz",
     placeholderNote:
       "Platzhalter — die Datenschutzerklärung muss an die tatsächliche Datenverarbeitung dieser neuen Website angepasst werden (Hosting, Formulare, Analyse-Tools) und sollte rechtlich geprüft werden, bevor sie veröffentlicht wird.",
+  },
+  faq: {
+    title: "Häufige Fragen",
+    intro: "Antworten auf die häufigsten Fragen rund um Studium, Bewerbung und Finanzierung.",
+    items: [
+      {
+        question: "Welche Studienprogramme bietet die MJTA an?",
+        answer:
+          "Zwei Programme: ein Master of Arts in Jewish Studies (gemeinsam mit dem Dallas Theological Seminary) und ein Zertifikatsprogramm in messianisch-jüdischen Studien als kompakterer Einstieg.",
+      },
+      {
+        question: "Was ist der Unterschied zwischen Master- und Zertifikatsprogramm?",
+        answer:
+          "Das Masterprogramm ist ein akademischer Abschluss mit rund 120 ECTS-Credits über 8–9 Semester, gedacht für zukünftige Leiterinnen und Leiter, Lehrende und Forschende. Das Zertifikatsprogramm ist kompakter (60 ECTS, ca. drei Jahre) und eignet sich für einen grundlegenden Einstieg in messianisch-jüdische Theologie neben dem Beruf.",
+      },
+      {
+        question: "Findet das Studium online oder in Präsenz statt?",
+        answer:
+          "Beide Programme sind berufsbegleitend. Das Masterprogramm läuft vollständig online per Videokonferenz. Das Zertifikatsprogramm bietet Live-Online-Sitzungen per Zoom sowie Blockseminare in Präsenz mit Zoom-Übertragung in Berlin.",
+      },
+      {
+        question: "Welche Voraussetzungen muss ich mitbringen?",
+        answer:
+          "Einen inneren Ruf für jüdisch-messianischen Dienst, einen anerkannten Bachelorabschluss (Ausnahmen möglich), aktive Mitgliedschaft in einer messianisch-jüdischen oder christlichen Gemeinde, sowie Englischkenntnisse mindestens auf Niveau C1.",
+      },
+      {
+        question: "Wann sind die Bewerbungsfristen?",
+        answer:
+          "Für das Herbstsemester (August–Dezember) ist die Frist der 1. Juli, für das Frühjahrssemester (Januar–Mai) der 1. November.",
+      },
+      {
+        question: "Was kostet das Studium?",
+        answer:
+          "Eine einmalige Anmeldegebühr von 50,00 € sowie 100,00 € pro ECTS-Credit. Zahlung ist als Vollzahlung oder in Raten über das Semester verteilt möglich.",
+      },
+      {
+        question: "Wie kann ich die MJTA unterstützen, wenn ich nicht studiere?",
+        answer:
+          "Die MJTA finanziert sich überwiegend durch Spenden. Unterstützung ist per Banküberweisung, durch Fürbitte oder ehrenamtliche Mithilfe bei Veranstaltungen möglich — mehr dazu auf der Seite „Unterstützen“.",
+      },
+      {
+        question: "Wo melde ich mich für meine Kurse an, wenn ich bereits Studierende bzw. Studierender bin?",
+        answer:
+          "Über das Studierendenportal oben rechts — das führt zum E-Learning-System (Canvas) von Beit Sar Shalom.",
+      },
+    ],
   },
 };

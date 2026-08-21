@@ -16,7 +16,8 @@ export const en: Dictionary = {
     anmelden: "Admission & Finances",
     unterstuetzen: "Support Us",
     kontakt: "Contact",
-    lmsLogin: "Login",
+    lmsLogin: "Student Portal",
+    faq: "FAQ",
     menuToggle: "Open menu",
   },
   footer: {
@@ -264,5 +265,51 @@ export const en: Dictionary = {
     title: "Privacy Policy",
     placeholderNote:
       "Placeholder — the privacy policy needs to be adapted to this new website's actual data processing (hosting, forms, analytics tools) and should receive legal review before publishing.",
+  },
+  faq: {
+    title: "Frequently Asked Questions",
+    intro: "Answers to the most common questions about studying, applying, and funding.",
+    items: [
+      {
+        question: "What study programs does MJTA offer?",
+        answer:
+          "Two programs: a Master of Arts in Jewish Studies (together with Dallas Theological Seminary) and a Certificate Program in Messianic Jewish Studies as a more compact entry point.",
+      },
+      {
+        question: "What's the difference between the Master's and Certificate programs?",
+        answer:
+          "The Master's is an academic degree with roughly 120 ECTS credits over 8–9 semesters, aimed at future leaders, educators, and researchers. The Certificate Program is more compact (60 ECTS, about three years) and suits a foundational introduction to Messianic Jewish theology alongside a job.",
+      },
+      {
+        question: "Is the program online or in person?",
+        answer:
+          "Both are part-time. The Master's runs entirely online via video conference. The Certificate Program offers live online sessions via Zoom as well as in-person block seminars with Zoom transmission in Berlin.",
+      },
+      {
+        question: "What are the admission requirements?",
+        answer:
+          "An inner calling to Messianic Jewish ministry, a recognized bachelor's degree (exceptions possible), active membership in a Messianic Jewish or Christian community, and English proficiency at C1 level or higher.",
+      },
+      {
+        question: "When are the application deadlines?",
+        answer:
+          "July 1 for the fall semester (August–December), and November 1 for the spring semester (January–May).",
+      },
+      {
+        question: "What does the program cost?",
+        answer:
+          "A one-time enrollment fee of €50.00, plus €100.00 per ECTS credit. You can pay in full or in installments spread across the semester.",
+      },
+      {
+        question: "How can I support MJTA if I'm not a student?",
+        answer:
+          "MJTA is funded primarily through donations. You can support us by bank transfer, through prayer, or by volunteering at events — see the \"Support Us\" page for details.",
+      },
+      {
+        question: "Where do I go for my courses if I'm already enrolled?",
+        answer:
+          "The Student Portal link in the top right — it leads to Beit Sar Shalom's e-learning system (Canvas).",
+      },
+    ],
   },
 };

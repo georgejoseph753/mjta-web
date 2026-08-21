@@ -18,6 +18,11 @@ interface Belief {
   text: string;
 }
 
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 interface BankDetails {
   holder: string;
   bank?: string;
@@ -43,6 +48,7 @@ export interface Dictionary {
     unterstuetzen: string;
     kontakt: string;
     lmsLogin: string;
+    faq: string;
     menuToggle: string;
   };
   footer: {
@@ -168,5 +174,10 @@ export interface Dictionary {
   datenschutz: {
     title: string;
     placeholderNote: string;
+  };
+  faq: {
+    title: string;
+    intro: string;
+    items: FaqItem[];
   };
 }
