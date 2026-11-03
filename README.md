@@ -55,12 +55,34 @@ That was the pragmatic fix for "the DE/EN button doesn't work" — a full URL-ba
 setup (like the old WordPress site's `/en/` prefix) is a bigger, separate change if you
 want it later.
 
+## Intern area
+
+`/intern` is a password-gated area, linked as the last item in the nav. It uses
+a **single shared username + password** (no user database), set via env vars:
+
+```bash
+INTERN_USERNAME=...
+INTERN_PASSWORD=...
+INTERN_SESSION_SECRET=...   # openssl rand -base64 32
+```
+
+A successful login sets an HMAC-signed, httpOnly session cookie that expires
+after 8 hours; `src/lib/internSession.ts` signs and verifies it with Node's
+built-in `crypto` (no auth dependency). If any of the three vars is missing the
+login **fails closed** — the page shows a "not configured" notice and no cookie
+is accepted, so deploying without configuring it never leaves the area open.
+
+The page behind the login is still a placeholder. Nothing sensitive should go
+there until this is replaced with real per-user accounts — a shared password is
+appropriate for low-stakes internal pages, not for personal data.
+
 ## Pages implemented
 
 Home (hero, mission quote, stats, beliefs grid, program preview, team
 placeholder, support CTA), Studieren, Studieren/Masterprogramm,
 Studieren/Zertifikatsprogramm, Anmelden, Unterstützen, Kontakt (working
-contact form → `/api/contact`), Impressum, Datenschutz. Program/admission/
+contact form → `/api/contact`), Intern (login + placeholder), Impressum,
+Datenschutz. Program/admission/
 support/contact/impressum content is the real copy pulled from the live
 mjta.de site, translated into both languages.
 
@@ -70,9 +92,10 @@ mjta.de site, translated into both languages.
    read access, nobody else sees the repo).
 2. Go to vercel.com, sign in with GitHub, click **Add New → Project**, pick
    the repo, set **Root Directory** to `frontend`.
-3. Add the SMTP env vars from `.env.local.example` under Project Settings →
-   Environment Variables (only needed once you have real SMTP credentials —
-   the form works and fails gracefully without them).
+3. Add the env vars from `.env.local.example` under Project Settings →
+   Environment Variables. SMTP is only needed once you have real credentials
+   (the form fails gracefully without them); the three `INTERN_*` vars are
+   needed for the Intern login to work at all.
 4. Deploy. You get a live URL like `mjta.vercel.app` immediately — that's
    what you share with the Gemeinde, not the repo.
 5. Optional later: point your real domain (mjta.de) at the Vercel project
