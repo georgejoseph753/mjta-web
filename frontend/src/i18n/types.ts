@@ -49,6 +49,7 @@ export interface Dictionary {
     kontakt: string;
     lmsLogin: string;
     faq: string;
+    intern: string;
     menuToggle: string;
   };
   footer: {
@@ -179,5 +180,18 @@ export interface Dictionary {
     title: string;
     intro: string;
     items: FaqItem[];
+  };
+  intern: {
+    title: string;
+    intro: string;
+    usernameLabel: string;
+    passwordLabel: string;
+    submit: string;
+    submitting: string;
+    errorInvalid: string;
+    errorUnconfigured: string;
+    welcomeHeading: string;
+    placeholderNote: string;
+    logout: string;
   };
 }

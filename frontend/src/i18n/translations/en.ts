@@ -18,6 +18,7 @@ export const en: Dictionary = {
     kontakt: "Contact",
     lmsLogin: "Student Portal",
     faq: "FAQ",
+    intern: "Internal",
     menuToggle: "Open menu",
   },
   footer: {
@@ -311,5 +312,20 @@ export const en: Dictionary = {
           "The Student Portal link in the top right — it leads to Beit Sar Shalom's e-learning system (Canvas).",
       },
     ],
+  },
+  intern: {
+    title: "Internal",
+    intro: "Protected area for MJTA staff.",
+    usernameLabel: "Username",
+    passwordLabel: "Password",
+    submit: "Log in",
+    submitting: "Logging in …",
+    errorInvalid: "Incorrect username or password.",
+    errorUnconfigured:
+      "The internal area is not set up yet. Please contact the administration.",
+    welcomeHeading: "Internal Area",
+    placeholderNote:
+      "Internal content will live here. The login already works — the pages behind it are still to come.",
+    logout: "Log out",
   },
 };

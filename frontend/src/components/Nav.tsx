@@ -37,6 +37,7 @@ export function Nav() {
     { label: t.nav.unterstuetzen, href: "/unterstuetzen" },
     { label: t.nav.faq, href: "/faq" },
     { label: t.nav.kontakt, href: "/kontakt" },
+    { label: t.nav.intern, href: "/intern" },
   ];
 
   return (
